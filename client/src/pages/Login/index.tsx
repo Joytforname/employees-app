@@ -20,12 +20,7 @@ const Login = () => {
 			navigate('/');
 		} catch (err) {
 			const mbErr = isErrorWithMessage(err);
-			if (!mbErr){
-				setError('Что-то пошло не так');
-			} else {
-				setError(err.data.message);
-			}
-			// mbErr ? setError(err.data.message) : setError('Что-то пошло не так');
+			mbErr ? setError(err.data.message) : setError('Что-то пошло не так');
 		}
 	};
 	return (
