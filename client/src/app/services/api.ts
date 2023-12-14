@@ -11,6 +11,7 @@ const baseQuery = fetchBaseQuery({
 		if (token || token !== null) {
 			headers.set('authorization', `Bearer ${token}`)
 		}
+		return headers;
 	},
 });
 

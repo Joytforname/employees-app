@@ -1,4 +1,3 @@
-import Icon from '@ant-design/icons/lib/components/Icon';
 import CustomButton from '../../components/custom-button';
 import Layout from '../../components/layout';
 import { PlusCircleOutlined } from '@ant-design/icons';
@@ -28,8 +27,8 @@ const Employees = () => {
 		}
 	}, [navigate, user]);
 	const goToAddUser = () => {
-		navigate(Paths.employeeAdd)
-	}
+		navigate(Paths.employeeAdd);
+	};
 	return (
 		<Layout>
 			<CustomButton
