@@ -10,6 +10,7 @@ import EmployeeForm from '../../components/employee-form';
 import { Employee } from '@prisma/client';
 import { Paths } from '../../paths';
 import { isErrorWithMessage } from '../../utils/is-error-with-message';
+import Loading from '../loading';
 
 const EditEmployee = () => {
 	const navigate = useNavigate();
@@ -19,7 +20,7 @@ const EditEmployee = () => {
 	const [editEmployee] = useEditEmployeeMutation();
 	const handleEditUser = async (employee: Employee) => {
 		if (isLoading) {
-			return <span>Loading</span>;
+			return <Loading/>;
 		}
 		try {
 			const editedEmployee = {

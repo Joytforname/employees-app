@@ -13,6 +13,7 @@ import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
 import ErrorMessage from '../../components/error-message';
 import { Paths } from '../../paths';
 import { isErrorWithMessage } from '../../utils/is-error-with-message';
+import Loading from '../loading';
 
 const Employee = () => {
 	const navigate = useNavigate();
@@ -23,7 +24,7 @@ const Employee = () => {
 	const [removeEmployee] = useRemoveEmployeeMutation();
 	const user = useSelector(selectUser);
 	if (isLoading) {
-		return <span>Loading</span>;
+		return <Loading/>;
 	}
 	if (!data) {
 		return <Navigate to='/' />;
