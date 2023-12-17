@@ -13,6 +13,7 @@
 		"@ant-design/icons": "^5.2.6",
 		"@reduxjs/toolkit": "^2.0.1",
 		"antd": "5.1.5",
+		"prisma": "^5.7.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-redux": "^9.0.4",
@@ -27,7 +28,6 @@
 		"eslint": "^8.53.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.4",
-		"prisma": "^5.7.0",
 		"typescript": "^5.2.2",
 		"vite": "^5.0.0"
 	}
